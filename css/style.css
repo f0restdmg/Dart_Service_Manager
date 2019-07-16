@@ -34,6 +34,7 @@ a {
 .header .container {
   margin: 0 auto;
   max-width: 1300px;
+  padding: 0 20px;
 }
 
 .header .container .nav {
@@ -44,6 +45,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -127,6 +130,7 @@ a {
 
 .header .container .header-content__text .header-content__links {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .header .container .header-content__text .header-content__links a {
@@ -158,6 +162,7 @@ a {
 .easy .container {
   margin: 0 auto;
   max-width: 1300px;
+  padding: 0 20px;
 }
 
 .easy .container .easy-wrap {
@@ -260,6 +265,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -370,12 +377,17 @@ a {
 .services .container {
   margin: 0 auto;
   max-width: 1300px;
+  padding: 0 20px;
 }
 
 .services .container .services-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -403,6 +415,88 @@ a {
   margin-bottom: 70px;
 }
 
+.services .container .services-wrap .service-acc {
+  max-width: 80vw;
+}
+
+.services .container .services-wrap .service-acc .service-acc__item {
+  display: block;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.services .container .services-wrap .service-acc .service-acc__header {
+  width: 80vw;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .container .services-wrap .service-acc .service-acc__header .service-acc__link {
+  width: 100%;
+  text-align: left;
+  padding: 15px 0;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #061e37;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.services .container .services-wrap .service-acc .service-acc__body {
+  display: none;
+}
+
+.services .container .services-wrap .service-acc img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  height: auto;
+  padding-right: 15px;
+  margin: 15px auto;
+}
+
+.services .container .services-wrap .service-acc p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #061e37;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+}
+
+.services .container .services-wrap .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .header-content {
     display: -webkit-box;
@@ -412,6 +506,20 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+  .info .container .info-items .info-items__item-1,
+  .info .container .info-items .info-items__item-2,
+  .info .container .info-items .info-items__item-3,
+  .info .container .info-items .info-items__item-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

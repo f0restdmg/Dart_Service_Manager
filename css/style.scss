@@ -10,10 +10,12 @@
     .container{
         margin: 0 auto;
         max-width: 1300px;
+        padding: 0 20px;
         .nav{
             padding-top: 40px;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             justify-content: space-between;
             width: 100%; 
             .logo{
@@ -43,7 +45,6 @@
                 }
             }
             .sign-up{
-                // width: 30%;
                 font-weight: 400;
                 font-size: 12px;
                 color: $white;
@@ -82,6 +83,7 @@
                 }
                 .header-content__links{
                     margin-top: 30px;
+                    margin-bottom: 30px;
                     a{
                         width: 145px;
                         height: 56px;
@@ -103,6 +105,7 @@
                     }
                     }
             }
+          
             
             }    
 }
@@ -113,6 +116,7 @@
     .container{
         margin: 0 auto;
         max-width: 1300px;
+        padding: 0 20px;
         .easy-wrap{
             padding-top: 50px;
             display: flex;
@@ -188,6 +192,7 @@
         width: 100%;
         .info-items{
             display: flex;
+            flex-wrap: wrap;
             width: 100%;
             .info-items__item-1{
                 img{
@@ -263,8 +268,10 @@
     .container{
         margin: 0 auto;
         max-width: 1300px;
+        padding: 0 20px;
         .services-wrap{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             .logo-text{
@@ -283,6 +290,68 @@
                     margin-bottom: 70px;
                 }
             }
+            .service-acc{
+                max-width: 80vw;
+                .service-acc__item{
+                    display: block;
+                    box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    width: 100%;
+                }
+                .service-acc__header{
+                    width: 80vw;
+                    padding: 0 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .service-acc__link{
+                    
+                        width: 100%;
+                        text-align: left;
+                        padding: 15px 0;
+                        cursor: pointer;
+                        background-color: $white;
+                        outline: none;
+                        border: none;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        color: $darkBlue;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        
+                    }
+                }
+                .service-acc__body {
+                        display: none;
+                    
+                    }
+                    img{
+                        display: flex;
+                        background-size: cover;
+                        background-position: center center;
+                        max-width: 100%;
+                        height: auto;
+                        padding-right: 15px;
+                        margin: 15px auto;
+            
+                    }
+                    p{
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: $darkBlue;
+                        line-height: 25px;
+                        letter-spacing: 0.3px;
+                    }
+                }
+                .show{
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+            }
         }
     }
 }
@@ -292,5 +361,16 @@
     .header-content{
         display: flex;
         flex-direction: column;
+        justify-content: center;   
+        text-align: center;
+        height: auto;
     }    
+    .info .container .info-items .info-items__item-1,
+    .info .container .info-items .info-items__item-2,
+    .info .container .info-items .info-items__item-3,
+    .info .container .info-items .info-items__item-4{
+        display: flex;
+        width: 50%;   
+    }  
+
 }    
