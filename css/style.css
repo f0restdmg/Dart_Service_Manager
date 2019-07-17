@@ -537,7 +537,7 @@ a {
     
   }
   .fa-bars{
-    display: block;
+    display: block!important;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
