@@ -106,7 +106,9 @@ a {
 .header .container .nav .sign-up:hover {
   color: #061e37;
 }
-
+.fa-bars{
+  display: none;
+}
 .header .container .header-content {
   width: 100%;
   min-height: 600px;
@@ -534,6 +536,12 @@ a {
     height: auto;
     
   }
+  .fa-bars{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
   .header-content__text,
   .header-content__video{
     width: 100%!important;
@@ -549,6 +557,8 @@ a {
   }
   .header .container .nav .menu{
     display: none;
+}
+
 }
 @media screen and (max-width: 480px){
   .header .container .nav .menu{
@@ -606,7 +616,12 @@ a {
     text-align: center;
   }
   .header-content__links a{
-    margin-right: 0;
-    width: 118px;
+    margin-right: 0!important;
+    width: 118px!important;
   }
+  .fa-bars{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
 }
