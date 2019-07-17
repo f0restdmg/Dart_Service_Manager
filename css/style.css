@@ -605,4 +605,7 @@ a {
     align-items: center;
     text-align: center;
   }
+  .header-content__links a{
+    margin-right: 0;
+  }
 }
