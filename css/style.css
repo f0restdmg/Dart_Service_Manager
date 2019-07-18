@@ -582,10 +582,10 @@ a {
   display: block;
 }
 .slider__item{
-  display: flex;
+  display: flex!important;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 .photo{
   margin-right: 15px;
