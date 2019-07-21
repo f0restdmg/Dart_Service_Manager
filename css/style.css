@@ -477,7 +477,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.service-acc__link{
+  margin-left: 10px;
+}
 .services .container .services-wrap .service-acc .service-acc__header .service-acc__link {
   width: 100%;
   text-align: left;
