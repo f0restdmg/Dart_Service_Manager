@@ -176,18 +176,23 @@ a {
 
  
 }
-.fa-angle-down,
-.fa-angle-up{
+.fas-angle-down,
+.fas-angle-up{
   color: #fff;
   font-size: 40px;
   position: absolute;
   right: 40%;
   
 }
-.fa-angle-up{
+.fas-angle-up{
   top: -35px;
 }
-
+.fas-angle-up{
+  content: "f106";
+}
+.fas-angle-down{
+  content: "f105";
+}
 .easy {
   min-height: 800px;
   background-color: #fff;
