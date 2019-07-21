@@ -814,6 +814,9 @@ text-align: center;
 .footer .menu{
   width: 40%;
 }
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
 .footer .menu .menu-items{
   display: flex;
   width: 100%;
