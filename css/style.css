@@ -176,23 +176,18 @@ a {
 
  
 }
-.fas-angle-down,
-.fas-angle-up{
+.fa-angle-down,
+.fa-angle-up{
   color: #fff;
   font-size: 40px;
   position: absolute;
   right: 40%;
   
 }
-.fas-angle-up{
+.fa-angle-up{
   top: -35px;
 }
-.fas-angle-up{
-  content: "f106";
-}
-.fas-angle-down{
-  content: "f105";
-}
+
 .easy {
   min-height: 800px;
   background-color: #fff;
@@ -450,6 +445,9 @@ a {
   font-size: 15px;
   margin-bottom: 70px;
 }
+.service-acc__link{
+  margin-left: 10px;
+}
 
 .services .container .services-wrap .service-acc {
   max-width: 80vw;
@@ -477,9 +475,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.service-acc__link{
-  margin-left: 10px;
-}
+
 .services .container .services-wrap .service-acc .service-acc__header .service-acc__link {
   width: 100%;
   text-align: left;
@@ -678,6 +674,7 @@ a {
   width: 160px;
   height: 160px;
   opacity: 1;
+  transition: .5s;
   
 }
 .person-text h4{
@@ -821,23 +818,19 @@ text-align: center;
 .footer .menu{
   width: 40%;
 }
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free";
-}
 .footer .menu .menu-items{
   display: flex;
   width: 100%;
-  /* margin-left: 2rem; */
   justify-content: space-between;
 }
 .menu-item a{
   font-size: 15px;
   color: #fff;
   font-weight: 600;
+  transition: .5s;
 }
 .menu-item a:hover{
   color:#384b5f;
-  transition: .5s;
 }
 .footer__links{
   display: flex;
@@ -852,6 +845,10 @@ text-align: center;
 .footer__about a{
   color: #384b5f;
   margin-right: 1rem;
+  transition: .5s;
+}
+.footer__about a:last-child{
+  margin-right: 0;
 }
 .footer__socials{
   color: #384b5f;
@@ -860,13 +857,17 @@ text-align: center;
 }
 .footer__socials i{
   margin-left: 1rem;
+  transition: .5s;
   
   
+}
+.footer__socials i:first-child{
+  margin-left: 0;
 }
 .footer__about a:hover,
 .footer__socials i:hover{
   color:#fff;
-  transition: .5s;
+  
 }
 
 
@@ -1007,33 +1008,7 @@ text-align: center;
     margin-right: 0!important;
     width: 118px!important;
   }
-  .fa-bars{
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .fa-bars:before {
-    content: "\f0c9";
-}
-.fa-caret-down:before {
-  content: "\f0d7";
-}
-  .fa-behance:before {
-    content: "\f1b4";
-  }
-  .fa-dribbble:before {
-    content: "\f17d";
-}
-.fa-linkedin-in:before {
-  content: "\f0e1";
-}
-.fa-twitter:before {
-  content: "\f099";
-}
-.fa-facebook:before {
-  content: "\f09a";
-}
+  
   .customers__text h2{
     font-size: 35px;
   }
